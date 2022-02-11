@@ -1,4 +1,4 @@
-Bundle-Name: form-captcha-web
+Bundle-Name: Form Captcha Web
 Bundle-SymbolicName: com.sample.form.captcha.web
 Bundle-Version: 1.0.0
-Export-Package: com.sample.form.captcha.web.constants
+Import-Package: *;resolution:=optional
