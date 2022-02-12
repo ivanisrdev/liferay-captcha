@@ -1,5 +1,4 @@
 configurations {
-	compileOnly.extendsFrom(liferayPortalKernel, liferayUtilTagLib, javaxPortlet, javaxServlet,
-			jstl, bndAnnotation, osgiAnnotations, captchaApi, captchaTaglib)
+	compileOnly.extendsFrom(liferayKernelApi)
 	cssBuilder.extendsFrom(liferayCssBuilder)
 }
