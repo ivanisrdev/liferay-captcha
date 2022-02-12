@@ -6,7 +6,7 @@ import javax.portlet.Portlet;
 import org.osgi.service.component.annotations.Component;
 
 /**
- * @author Ivan
+ * @author Ivan Sánchez
  */
 @Component(
 	immediate = true,

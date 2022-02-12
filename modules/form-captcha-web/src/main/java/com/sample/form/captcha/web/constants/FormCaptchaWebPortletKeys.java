@@ -1,7 +1,7 @@
 package com.sample.form.captcha.web.constants;
 
 /**
- * @author Ivan
+ * @author Ivan Sánchez
  */
 public class FormCaptchaWebPortletKeys {
 
@@ -17,4 +17,5 @@ public class FormCaptchaWebPortletKeys {
 	public static final String VIEW_JSP = "/view.jsp";
 	public static final String TEMPLATE_JSP = "/";
 
+	public static final String PARAM_EMAIL = "email";
 }

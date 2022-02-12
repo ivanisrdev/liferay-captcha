@@ -11,6 +11,9 @@ import org.osgi.service.component.annotations.Component;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceResponse;
 
+/**
+ * @author Ivan Sánchez
+ */
 @Component(
         property = {
                 "javax.portlet.name=" + FormCaptchaWebPortletKeys.WIDGET_NAME,
