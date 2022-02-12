@@ -1,6 +1,6 @@
 allprojects {
 
-    apply plugin: 'java'
+    apply plugin: "java"
 
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
@@ -8,15 +8,30 @@ allprojects {
 }
 
 subprojects {
-
     configurations {
-        liferayKernelApi
+        liferayPortalKernel
+        liferayUtilTagLib
+        javaxPortlet
+        javaxServlet
+        jstl
+        bndAnnotation
+        osgiAnnotations
         liferayCssBuilder
+        captchaApi
+        captchaTaglib
     }
 
     dependencies {
-        liferayKernelApi "com.liferay.portal:release.dxp.api:$liferayKernelApiVersion"
+        liferayPortalKernel "com.liferay.portal:com.liferay.portal.kernel:$liferayPortalKernelVersion"
+        liferayUtilTagLib "com.liferay.portal:com.liferay.util.taglib:$liferayUtilTagLibVersion"
+        javaxPortlet "javax.portlet:portlet-api:$javaxPortletApiVersion"
+        javaxServlet "javax.servlet:javax.servlet-api:$javaxServletApiVersion"
+        jstl "jstl:jstl:$jstlVersion"
+        bndAnnotation "biz.aQute.bnd:annotation:$bndAnnotationVersion"
+        osgiAnnotations "org.osgi:org.osgi.service.component.annotations:$osgiAnnotationsVersion"
         liferayCssBuilder "com.liferay:com.liferay.css.builder:$liferayCssBuilderVersion"
+        captchaApi "com.liferay:com.liferay.captcha.api:$captchaApiVersion"
+        captchaTaglib "com.liferay:com.liferay.captcha.taglib:$captchaTaglibVersion"
     }
 
 }
