@@ -1,0 +1,21 @@
+<%@ include file="/init.jsp" %>
+
+<portlet:actionURL name="<%=MVCCommandNames.ACTION_CAPTCHA%>" var="formCaptchaWebActionURL" />
+
+<portlet:resourceURL id="<%=MVCCommandNames.RESOURCE_CAPTCHA%>" var="captchaResourceURL"/>
+
+<aui:form action="${formCaptchaWebActionURL}" name="fm" method="post">
+    <aui:input name="email" id="email" type="email" cssClass="font-medium font-15" label="formcaptchaweb.form.label.email"
+               placeholder="formcaptchaweb.form.placehorder.email" required="true">
+        <aui:validator name="email"/>
+    </aui:input>
+    <liferay-captcha:captcha url="${captchaResourceURL}"/>
+    <div class="d-flex justify-content-around align-items-center">
+        <a href="#" class="font-20 font-bold button-link-dark-gray mb-30 mt-30">
+            <liferay-ui:message key="formcaptchaweb.button.cancel"></liferay-ui:message>
+        </a>
+        <button id="formCaptchaWebButton" class="font-20 font-bold button-link-pink mb-30 mt-30" type="submit" >
+            <liferay-ui:message key="formcaptchaweb.button.submit"></liferay-ui:message>
+        </button>
+    </div>
+</aui:form>
