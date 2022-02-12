@@ -1,5 +1,5 @@
 # liferay-captcha
-Integrating CAPTCHA or reCAPTCHA with custom portlet in Liferay 7.1 in main banch.
+Integrating CAPTCHA or reCAPTCHA with custom portlet in Liferay 7.x.
 
 
 You can see the result in the following screenshots, with recaptcha and simple captcha:
